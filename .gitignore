@@ -1,17 +1,33 @@
 # Python
 __pycache__/
 *.py[cod]
-*.pkl
-*.npz
+*.egg-info/
 .env
-
-# Node
-node_modules/
-dist/
-.vite/
-
-# OS
+.venv/
+*.sqlite3
 .DS_Store
 
-# Training samples
-new_samples.json
+# Jupyter / VS Code
+.ipynb_checkpoints/
+.vscode/
+*.ipynb
+
+# Node.js (frontend)
+node_modules/
+dist/
+frontend/node_modules/
+frontend/dist/
+
+# Logs and temp
+*.log
+*.tmp
+*.swp
+
+# Model weights and scalers (if big, optionally ignore)
+model/weights.npz
+model/x_scaler.pkl
+model/y_scaler.pkl
+
+# Build
+build/
+*.pkl
