@@ -18,7 +18,7 @@ app = FastAPI()
 # Add this before your routes
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["https://house-price-app.vercel.app/"],  # Frontend dev server
+    allow_origins=["https://house-price-app.vercel.app"],  # Frontend dev server
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
