@@ -228,7 +228,7 @@ function App() {
 
     try {
       const response = await axios.post<PredictedPriceResponse>(
-        "http://127.0.0.1:8000/predict",
+        "https://house-price-app-bk3h.onrender.com/predict",
         {
           numerical: numerical.map(Number),
           ocean_proximity: ocean
