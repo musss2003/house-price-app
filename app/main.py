@@ -44,6 +44,11 @@ with open(y_scaler_path, "rb") as f:
 nn = NeuralNetwork(input_size=16)
 nn.load(model_path)
 
+@app.get("/")
+def read_root():
+    return {"message": "House Price Prediction API is running!"}
+
+
 @app.post("/predict")
 def predict(data: HouseFeatures, background_tasks: BackgroundTasks):
     try:
